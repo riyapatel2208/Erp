@@ -1,0 +1,194 @@
+Below is a **simple, clear, step-by-step explanation** of how to **manage stock levels** and **map inventory items** in **Odoo ERP**, and also which **modules are required** for this practical assignment.
+(Explained in easy English.)
+
+---
+
+# ✅ **Modules Required for This Practical**
+
+For managing stock and mapping inventory items, you usually need these Odoo modules:
+
+### **1. Inventory Management (stock)**
+
+* Main module for product management, stock movement, warehouses, locations.
+
+### **2. Purchase**
+
+* Needed if you want to add stock through purchase orders.
+
+### **3. Sales**
+
+* Needed if stock is reduced through sales orders.
+
+### **4. Products Module (Automatically included with Inventory)**
+
+* Used to create and manage product items.
+
+👉 **Minimum modules required:**
+**Inventory + Products**
+(But for practical assignments, teachers usually expect: Inventory + Products + Purchase + Sales)
+
+---
+
+# ✅ **Part 1: How to Manage Stock Levels (Step by Step)**
+
+## **Step 1: Activate the Inventory module**
+
+1. Go to **Apps**
+2. Search **Inventory**
+3. Install **Inventory Management**
+
+---
+
+## **Step 2: Create a Product**
+
+1. Open **Inventory Module**
+2. Go to **Products → Products**
+3. Click **Create**
+
+Fill details:
+
+* **Product Name**: Example: Laptop
+* **Product Type**: Select **Storable Product**
+  (Important → only storable products keep stock)
+* **Category**: Select product category
+* **Unit of Measure (UoM)**: Example: Units
+* **Vendor** (optional): Add supplier if needed
+
+Save.
+
+---
+
+## **Step 3: Set Opening Stock (Initial Inventory)**
+
+To add initial stock:
+
+1. Go to **Inventory → Operations → Inventory Adjustments**
+2. Click **Create**
+3. Add **Product**
+4. Select **Location** (Stock / Warehouse)
+5. Enter **On Hand Quantity**
+6. Click **Apply**
+
+This will create the initial stock level.
+
+---
+
+## **Step 4: Increase Stock Through Purchase Order**
+
+(Only if Purchase module installed)
+
+1. Go to **Purchase → Orders → Create**
+2. Select Vendor
+3. Add the Product
+4. Confirm Order
+5. Click **Receive Products**
+6. Validate the receipt
+   → Stock will increase automatically.
+
+---
+
+## **Step 5: Decrease Stock When Selling**
+
+(Only if Sales module installed)
+
+1. Go to **Sales → Create**
+2. Select Customer
+3. Add Product
+4. Confirm Order
+5. Click **Delivery**
+6. Validate
+   → Stock will decrease.
+
+---
+
+## **Step 6: Check Stock Levels**
+
+To view available stock:
+
+1. Go to **Inventory → Products**
+2. Select product
+3. Check **On Hand Quantity**
+4. Also check **Forecasted Quantity** (future incoming/outgoing)
+
+---
+
+# ✅ **Part 2: How to Map Inventory Items (Step by Step)**
+
+Mapping means **linking products correctly** inside the system:
+
+### Mapping Includes:
+
+✔ Product Categories
+✔ Product UoM (Units, Pieces, Kg)
+✔ Warehouse / Stock Locations
+✔ Vendors (suppliers)
+✔ Taxes
+✔ Internal Reference (SKU code)
+
+---
+
+## **Step 1: Create Product Categories**
+
+1. Inventory → Configuration → Product Categories
+2. Create category (Example: Electronics)
+3. Add account settings (optional)
+
+---
+
+## **Step 2: Create Internal Reference (SKU code)**
+
+1. Open Product
+2. Add **Internal Reference** like: LAP-001
+   → Used for barcode & item mapping.
+
+---
+
+## **Step 3: Map Stock Locations**
+
+1. Inventory → Configuration → Locations
+2. Create or edit locations like:
+
+   * WH/Stock
+   * WH/Stock/Shelf 01
+
+Mapping product to location happens automatically during stock movement.
+
+---
+
+## **Step 4: Add Vendor Mapping**
+
+1. Open the product
+2. Go to **Purchase** tab
+3. Add Vendor
+4. Add vendor price
+   → Used when auto-reordering.
+
+---
+
+## **Step 5: Enable Barcode (Optional)**
+
+Module: **Barcode**
+Used for warehouse item scanning.
+
+---
+
+# ✅ **Summary (Very Easy to Remember)**
+
+| Task                | Module Needed | Steps                      |
+| ------------------- | ------------- | -------------------------- |
+| Create Product      | Inventory     | Products → Create          |
+| Add Opening Stock   | Inventory     | Inventory Adjustments      |
+| Increase Stock      | Purchase      | Purchase Order → Receive   |
+| Decrease Stock      | Sales         | Sales Order → Delivery     |
+| Map Inventory Items | Inventory     | Categories, UoM, Locations |
+
+---
+
+# If you want, I can also provide:
+
+✅ Practical assignment answer
+✅ Screenshots-style explanation
+✅ Gujarati explanation
+✅ Sample project report for Odoo Inventory
+
+Would you like that?
