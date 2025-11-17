@@ -1,0 +1,171 @@
+Below is a **simple, clear, step-by-step explanation** of how to create **Employee Records, Departments, Job Positions, and Contracts** in **Odoo (Employees Module)**.
+I’m also explaining **which Odoo modules are used** for this practical assignment.
+
+---
+
+# ✅ **Modules Required for This Practical**
+
+To perform this assignment, you need the following Odoo modules:
+
+### **1. Employees Module (hr)**
+
+* Create employee profiles
+* Assign departments
+* Assign job positions
+* Manage employee personal details
+
+### **2. Departments (included inside Employees module)**
+
+* Used to create and manage departments
+
+### **3. Job Positions (included inside Employees module)**
+
+* Used to create job roles like “Accountant”, “HR Manager”, etc.
+
+### **4. Contracts Module (hr_contract)**
+
+* Used to create employee salary, working schedule, start date, end date, contract terms
+
+### **(Optional) 5. Payroll Module (hr_payroll)**
+
+* Only needed if you want to run payroll
+
+---
+
+# ✅ **Practical Assignment – Step-by-Step Guide**
+
+---
+
+# **STEP 1: Open Employees Module**
+
+1. Go to **Employees** app
+2. Dashboard will show all employee cards
+
+---
+
+# **STEP 2: Create Departments**
+
+Departments are needed before assigning employees.
+
+### Steps:
+
+1. In Employees app → Go to **Configuration**
+2. Click **Departments**
+3. Click **Create**
+4. Enter:
+
+   * **Department Name** (e.g., Sales, HR, IT)
+   * **Manager** (optional)
+5. Click **Save**
+
+📌 *Departments help group employees and define hierarchy.*
+
+---
+
+# **STEP 3: Create Job Positions**
+
+Before adding employees, create available job roles.
+
+### Steps:
+
+1. In Employees app → **Configuration**
+2. Click **Job Positions**
+3. Click **Create**
+4. Enter:
+
+   * **Job Title** (e.g., Accountant, Developer)
+   * **Department** (optional)
+5. Click **Save**
+
+📌 *Job positions help HR manage recruitment and job structure.*
+
+---
+
+# **STEP 4: Create Employee Records**
+
+### Steps:
+
+1. In Employees app → Click **Create**
+2. Fill in employee details:
+
+   * **Name**
+   * **Work Information**
+   * Department → Select from created list
+   * Job Position → Select from created list
+   * Manager → (Optional)
+3. Go to **Private Information** tab
+
+   * Enter personal details (DOB, Address, etc.)
+4. Save the record
+
+📌 *After saving, the employee becomes visible in your HR database.*
+
+---
+
+# **STEP 5: Create Employee Contract**
+
+Contracts define salary, job role, working hours, joining date.
+
+### Steps:
+
+1. Open Employees app
+2. Select any employee record
+3. Go to **Contracts** tab
+4. Click **Create New Contract**
+5. Fill in:
+
+   * Contract Name
+   * Employee Name (auto-filled)
+   * Job Position
+   * Department
+   * Start Date
+   * Salary Structure Type
+   * Wage (monthly salary)
+   * Working Schedule
+6. Save contract
+
+📌 *Contract must be in “Running” state for payroll.*
+
+---
+
+# **STEP 6 (Optional): Use Payroll Module**
+
+If payroll module is installed, you can:
+
+* Generate salary slips
+* Compute salary rules
+* Manage deductions and allowances
+
+Not required unless your assignment demands.
+
+---
+
+# ✅ **Summary Table – What Each Module Does**
+
+| **Module Name**             | **Purpose**                                     |
+| --------------------------- | ----------------------------------------------- |
+| **Employees (hr)**          | Create/manage employees                         |
+| **Departments**             | Create HR departments                           |
+| **Job Positions**           | Create job roles                                |
+| **Contracts (hr_contract)** | Create employee contracts, salary, joining date |
+| **Payroll (Optional)**      | Salary structure & payslips                     |
+
+---
+
+# ✅ **Short Practical Explanation (Easy Words)**
+
+* First **create departments** (HR, Sales, IT)
+* Then **create job positions** (HR Manager, Sales Executive)
+* Next **create employee profile** (Name, Phone, Department, Job Position)
+* Finally **create contract** (Salary, Start Date, Working Hours)
+
+---
+
+If you want, I can also provide:
+
+✔ Practical report
+✔ Screenshots format
+✔ Assignment explanation in **Gujarati or English**
+✔ Viva questions
+
+Would you like the **full assignment report format**?
